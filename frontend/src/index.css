@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "VioletSans";
+  src: local("VioletSans"),
+    url(./components/assets/fonts/VioletSans-Regular.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: local("RobotoMono"),
+    url(./components/assets/fonts/RobotoMono-Regular.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: "RobotoMonoLight";
+  src: local("RobotoMonoLight"),
+    url(./components/assets/fonts/RobotoMono-Thin.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: "Nippo";
+  src: local("Nippo"),
+    url(./components/assets/fonts/Nippo-Regular.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}

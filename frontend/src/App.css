@@ -1,0 +1,526 @@
+body {
+  background-color: #070C10;
+  
+  /* NYX BorderBox Style */
+  --border-size: 1px;
+  --card2-bd-bl-point: 151px;
+  --card2-bd-bl-point1: 137px;
+  --card2-bd-bl-point2: 95px;
+  --card2-bd-bl-point3: 81px;
+
+  --card2-bd-tr-point1: 18px;
+  --card2-bd-tr-point2-1: 110px;
+  --card2-bd-tr-point2: 108px;
+  --card2-bd-tr-point3-1: 124px;
+  --card2-bd-tr-point3: 122px;
+  --card2-bd-tr-point4: 270px;
+  --card2-bd-tr-point5: 284px;
+
+  --card3-bd-bl-point: 151px;
+  --card3-bd-bl-point1: 137px;
+  --card3-bd-bl-point2: 95px;
+  --card3-bd-bl-point3: 81px;
+
+  --card3-bd-tr-point1: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #01FFC2;
+}
+
+.is-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.nyxContainer {
+  padding: 0 10%;
+}
+
+.nyxBorderTop {
+  border-width: 0.5px;
+  border-style: solid none none;
+  border-color: #747474aa;
+}
+
+.nyxBorderRight {
+  border-width: 0.5px;
+  border-style: none solid none none;
+  border-color: #747474aa;
+}
+
+.nyxBorderBottom {
+  border-width: 0.5px;
+  border-style: none none solid;
+  border-color: #747474aa;
+}
+
+.nyxBorderX {
+  border-width: 0.5px;
+  border-style: none solid none;
+  border-color: #747474aa;
+}
+
+.nyxNo {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #747474aa;
+  border-collapse: collapse;
+  width: 110px;
+  height: 82px;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  font-size: 64px;
+  font-weight: 100;
+  color: #747474aa;
+  line-height: 1.2;
+}
+
+.nyxTitle {
+  font-family: 'Roboto Mono';
+  font-size: 56px;
+  letter-spacing: -0.05em;
+  line-height: 4.4rem;
+}
+
+.gridLine{
+  background-color: transparent;
+  background-image:       linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+height:100%;
+background-size:60px 60px;
+}
+
+.cornered {
+  --b: 1px; /* border thickness */
+  --c: #0000 25%,rgb(255, 255, 255) 0; /* define the color here */
+  padding: 15px;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 15px 15px; /* adjust border length here */
+  background-repeat: no-repeat;
+  transition: .6s;
+  /* cursor: pointer; */
+}
+
+@media only screen and (max-width: 640px) {
+
+  .nav-logo-w-h {
+    width: 42px;
+    height: 24px;
+  }
+
+  .nyxContainer {
+    padding: 0 14px;
+  }
+
+  .nav-h-52 {
+    height: 52px;
+  }
+  .nav-y-p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-p {
+    padding: 0 14px;
+  }
+  .nyxNo {
+    width: 51px;
+    height: 42px;
+    font-size: 20px;
+    color: #747474aa;
+    line-height: 1.9;
+  }
+  .nyxTitle {
+    font-size: 26px;
+    line-height: 1.75rem;
+  }
+  .cornered {
+    --b: 1px; /* border thickness */
+    padding: 2px;
+    background-size: 5px 5px; /* adjust border length here */
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .nav-logo-w-h {
+    width: 42px;
+    height: 24px;
+  }
+
+  .nyxContainer {
+    padding: 0 28px;
+  }
+
+  .nav-h-52 {
+    height: 52px;
+  }
+
+  .nav-y-p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-x-p {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .nyxNo {
+    width: 71px;
+    height: 55px;
+    font-size: 36px;
+    color: #747474aa;
+    line-height: 1.4;
+  }
+  .nyxTitle {
+    font-size: 36px;
+    line-height: 2.8rem;
+  }
+  .cornered {
+    --b: 1px; /* border thickness */
+    padding: 5px;
+    background-size: 7px 7px; /* adjust border length here */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-logo-w-h {
+    width: 64px;
+    height: 39px;
+  }
+  .nyxContainer {
+    padding: 0 56px;
+  }
+  .nav-y-p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nyxNo {
+    width: 91px;
+    height: 70px;
+    font-size: 54px;
+    color: #747474aa;
+    line-height: 1.2;
+  }
+  .nyxTitle {
+    font-size: 48px;
+    line-height: 3.7rem;
+  }
+}
+
+/* NYX BorderBox Style */
+.shape-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2px;
+}
+
+.shape-outer {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #747474aa;
+  padding: 1px;
+}
+
+.shape-inner {
+  width: 100%;
+  height: 100%;
+  background: #070C10;
+  background-size: cover;
+}
+
+.border-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.border-top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.border-right {
+  position: absolute;
+  right: 0;  
+  top: 116px;
+  right: 2px;
+}
+
+.customize-outer {
+  clip-path: polygon(
+    0% 0%,
+    0% calc(100% - var(--card2-bd-bl-point)),
+    15px calc(100% - var(--card2-bd-bl-point1)),
+    15px calc(100% - var(--card2-bd-bl-point2)),
+    0 calc(100% - var(--card2-bd-bl-point3)),
+    0 100%,
+
+    calc(100% - 15px) 100%,
+    100% calc(100% - 15px),
+
+    100% var(--card2-bd-tr-point5),
+    calc(100% - 13px) var(--card2-bd-tr-point4),
+    calc(100% - 13px) var(--card2-bd-tr-point3-1),
+    100% var(--card2-bd-tr-point2-1),
+    100% var(--card2-bd-tr-point1),
+    calc(100% - var(--card2-bd-tr-point1)) 0%
+  );
+}
+
+.customize-inner {
+  clip-path: polygon(
+    0% 0%,
+    0% calc(100% - var(--card2-bd-bl-point)),
+    15px calc(100% - var(--card2-bd-bl-point1)),
+    15px calc(100% - var(--card2-bd-bl-point2)),
+    0 calc(100% - var(--card2-bd-bl-point3)),
+    0 100%,
+
+    calc(100% - 15px) 100%,
+    100% calc(100% - 15px),
+
+    100% var(--card2-bd-tr-point5),
+    calc(100% - 13px) var(--card2-bd-tr-point4),
+    calc(100% - 13px) var(--card2-bd-tr-point3),
+    100% var(--card2-bd-tr-point2),
+    100% var(--card2-bd-tr-point1),
+    calc(100% - var(--card2-bd-tr-point1)) 0%
+  );
+}
+
+/* large box */
+.shape-container_44 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2px;
+}
+
+.shape-outer_44 {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #747474aa;
+  padding: 1px;
+}
+
+.shape-inner_44 {
+  width: 100%;
+  height: 100%;
+  background: #070C10;
+  background-size: cover;
+}
+
+.border-bottom-left_44 {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+}
+
+.border-top-right_44 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.border-top_44 {
+  position: absolute;
+  left: calc(100% - 677px);
+  top: 2px;
+}
+
+.customize-outer_44 {
+  clip-path: polygon(
+    0% 0%,
+
+    0% calc(100% - var(--card3-bd-bl-point)),
+    15px calc(100% - var(--card3-bd-bl-point1)),
+    15px calc(100% - var(--card3-bd-bl-point2)),
+    0 calc(100% - var(--card3-bd-bl-point3)),
+    
+    0 100%,
+
+    calc(100% - 50px) 100%,
+    100% calc(100% - 50px),
+
+    100% var(--card3-bd-tr-point1),
+    calc(100% - var(--card3-bd-tr-point1)) 0%,
+
+    calc(100% - 403px) 0%,
+    calc(100% - 415px) calc(13px),
+    calc(100% - 665px) calc(13px),
+    calc(100% - 680px) 0%
+  );
+}
+
+.customize-inner_44 {
+  clip-path: polygon(
+    0% 0%,
+
+    0% calc(100% - var(--card3-bd-bl-point)),
+    15px calc(100% - var(--card3-bd-bl-point1)),
+    15px calc(100% - var(--card3-bd-bl-point2)),
+    0 calc(100% - var(--card3-bd-bl-point3)),
+
+    0 100%,
+
+    calc(100% - 50px) 100%,
+    100% calc(100% - 50px),
+
+    100% var(--card3-bd-tr-point1),
+    calc(100% - var(--card3-bd-tr-point1)) 0%,
+    
+    calc(100% - 401px) 0%,
+    calc(100% - 413px) calc(13px),
+    calc(100% - 665px) calc(13px),
+    calc(100% - 680px) 0%
+  );
+}
+
+/* Cornered */
+.box {
+  --c: repeating-linear-gradient(270deg,#01FFC2
+  ,#5AB0FF);
+  --w:15px;
+  --b:1px;
+  
+
+  padding: var(--b); /* space for the border */
+  position:relative;
+  box-sizing:border-box;
+  display:inline-flex;
+  font-size:30px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color: white;
+}
+
+.box::before {
+  content :"";
+  position: absolute;
+  inset: 0;
+  background: var(--c,red);
+  --_g: #0000 90deg,#000 0;
+  --_p: var(--w) var(--w) no-repeat;
+  --mask:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+
+
+
+.cornered_icon {
+  --b: 0.61px; /* border thickness */
+  --c: #0000 25%,rgb(255, 255, 255) 0; /* define the color here */
+  padding: 8px;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 10px 10px; /* adjust border length here */
+  background-repeat: no-repeat;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.cornered_icon_hover :hover{
+  --b: 0.61px;
+  --c: #02ff9600 25%,rgb(0, 255, 255) 0; /* define the color here */
+  padding: 0px;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 10px 10px; /* adjust border length here */
+  background-repeat: no-repeat;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.vibration {
+  background-color: transparent;
+  color: #f8f5f6;
+}
+
+.vibration:hover {
+  animation: beats 1s forwards;
+  transition: .5s;
+}
+
+@keyframes beats {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.04);
+      /* box-shadow: 0 20px 20px rgba(28, 214, 158, 0.3); */
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+.fadeUpAnimation {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fadeUpAnimation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mask {
+  width: 100%;
+  height: 4px;
+  animation-name:spinUG;
+  animation-duration:15000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  from {
+    width:0;
+  }
+  
+  to {
+    width:100%;
+  }
+  
+  
+}

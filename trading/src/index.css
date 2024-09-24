@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrollbar-track-color: #f1f1f1; /* light mode */
+  --scrollbar-thumb-color: #818EA3; /* light mode */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
+

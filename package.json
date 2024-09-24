@@ -1,0 +1,39 @@
+{
+  "name": "nyxcipher-contract-1.1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat clean && npx hardhat compile",
+    "deploy-mainnet": "npx hardhat run scripts/deploy.js",
+    "deploy-testnet": "npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy-hardhat": "start npx hardhat node && npx hardhat run scripts/deploy.js --network hardhat",
+    "test-hardhat": "start npx hardhat node && npx hardhat test test/test.js --network hardhat",
+    "test-testnet": "npx hardhat test test/test-sepolia.js --network sepolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SS-FS-58/nyxcipher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SS-FS-58/nyxcipher/issues"
+  },
+  "homepage": "https://github.com/SS-FS-58/nyxcipher#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "hardhat": "^2.22.2"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.4.7",
+    "@nomicfoundation/edr-win32-x64-msvc": "^0.3.1",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "dotenv": "^16.4.5",
+    "jquery": "^3.7.1",
+    "moralis": "^2.25.1",
+    "web3": "^4.6.0"
+  }
+}
