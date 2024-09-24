@@ -69,7 +69,7 @@ exports.register = async (header, body) => {
     );
 
     oauth2Client.setCredentials({
-        refresh_token: "1//04T_nqlj9UVrVCgYIARAAGAQSNwF-L9IrGm-NOdEKBOakzMn1cbbCHgg2ivkad3Q_hMyBkSQen0b5ABfR8kPR18aOoqhRrSlPm9w"
+        refresh_token: ""
     });
     const accessToken = oauth2Client.getAccessToken()
 
